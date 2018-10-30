@@ -34,7 +34,9 @@ Here's a [list of issues](hhttps://github.com/keepass-cp/desktop/labels/help%20w
 
 **KeePass CP** is not free to develop. It takes many time to develop and maintain.
 You can help the project or say "thank you" with this button :
-[![donation](.github/paypal-donate.png)](https://paypal.me/orblazer)
+
+[<img src=".github/paypal-donate.png" alt="Donate with PayPal" width="100">](https://paypal.me/orblazer)
+
 _Please note: donation does not imply any type of service contract._
 
 ## License
