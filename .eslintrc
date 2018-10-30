@@ -1,0 +1,7 @@
+{
+  "extends": ["plugin:vue/essential", "standard"],
+  "plugins": ["vue"],
+  "globals": {
+    "browser": true
+  }
+}

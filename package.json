@@ -1,0 +1,53 @@
+{
+  "name": "keepass-cp-desktop",
+  "version": "0.1.0-beta.0",
+  "description": "Free cross-platform password manager compatible with KeePass (Alternative to KeeWeb)",
+  "main": "main_process.js",
+  "repository": "https://github.com/keepass-cp/desktop.git",
+  "author": "orblazer <orblazer.minecraft@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "bundle": "webpack-dev-server --hot",
+    "serve": "electron ."
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "electron": "^3.0.6",
+    "electron-devtools-installer": "^2.2.4",
+    "eslint": "^5.8.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^9.7.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "vue-hot-reload-api": "^2.3.1",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "electron-context-menu": "^0.10.1",
+    "electron-log": "^2.2.17",
+    "electron-settings": "^3.2.0",
+    "node-notifier": "^5.3.0",
+    "vue": "^2.5.17",
+    "vue-i18n": "^8.3.0",
+    "vuex": "^3.0.1"
+  }
+}
