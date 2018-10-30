@@ -1,0 +1,84 @@
+.s-laptop_l--only,
+.s-laptop_l--more,
+.s-laptop--only,
+.s-laptop--more,
+.s-tablet--only,
+.s-tablet--more,
+.s-mobile_l--only,
+.s-mobile_l--more,
+.s-mobile_m--only,
+.s-mobile_m--more,
+.s-mobile_s--only,
+.s-mobile--only {
+  display: none;
+}
+
+@media (min-width: ($laptop + 1px)) {
+  .s-laptop_l--more {
+    display: initial;
+  }
+
+  .s-laptop_l--only {
+    display: initial;
+  }
+}
+
+@media (min-width: ($tablet + 1px)) {
+  .s-laptop--more {
+    display: initial;
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $laptop) {
+  .s-laptop--only {
+    display: initial;
+  }
+}
+
+@media (min-width: ($mobile_l + 1px)) {
+  .s-tablet--more {
+    display: initial;
+  }
+}
+
+@media (min-width: $mobile_l) and (max-width: $tablet) {
+  .s-tablet--only {
+    display: initial;
+  }
+}
+
+@media (min-width: ($mobile_m + 1px)) {
+  .s-mobile_l--more {
+    display: initial;
+  }
+}
+
+@media (min-width: $mobile_m) and (max-width: $mobile_l) {
+  .s-mobile_l--only {
+    display: initial;
+  }
+}
+
+@media (min-width: ($mobile_s + 1px)) {
+  .s-mobile_m--more {
+    display: initial;
+  }
+}
+
+@media (min-width: $mobile_s) and (max-width: $mobile_m) {
+  .s-mobile_m--only {
+    display: initial;
+  }
+}
+
+@media (max-width: $mobile_s) {
+  .s-mobile_s--only {
+    display: initial;
+  }
+}
+
+@media (max-width: $mobile_l) {
+  .s-mobile--only {
+    display: initial;
+  }
+}

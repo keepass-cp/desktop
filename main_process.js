@@ -1,5 +1,4 @@
 const electron = require('electron')
-const pathResolve = require('path').resolve
 const notifier = require('node-notifier')
 const log = require('electron-log')
 const app = electron.app // Module to create native browser window.

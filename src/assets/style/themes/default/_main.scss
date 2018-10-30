@@ -1,0 +1,10 @@
+.th-default {
+  @include css-vars(
+    (
+      --text-color: $textColor,
+      --background-color: $backgroundColor,
+      --scroll-color: $scroll-color,
+      --scroll-thumb-color: $scroll-thumb-color
+    )
+  );
+}

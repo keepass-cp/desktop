@@ -1,0 +1,79 @@
+/**
+ * Input
+ */
+input:not([type="checkbox"]),
+select {
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+input[type="checkbox"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input[type="checkbox"].input-checkbox {
+  display: none;
+}
+
+input[type="checkbox"].input-checkbox + i.input-checkbox {
+  position: relative;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  margin: 2px;
+  margin-right: 4px;
+  border: 1px solid;
+  // TODO: Move to theme
+  // background-color: $white;
+}
+
+input[type="checkbox"]:disabled.input-checkbox + i.input-checkbox {
+  cursor: not-allowed;
+  // TODO: Move to theme
+  // background-color: $white_3;
+}
+
+input[type="checkbox"].input-checkbox:hover:not(:disabled) + i.input-checkbox,
+input[type="checkbox"].input-checkbox:focus:not(:disabled) + i.input-checkbox {
+  // TODO: Move to theme
+  // border-color: $blue;
+}
+
+input[type="checkbox"]:checked:not(:disabled).input-checkbox + i.input-checkbox {
+  // TODO: Move to theme
+  // background-color: $blue;
+}
+
+input[type="checkbox"]:checked:disabled.input-checkbox + i.input-checkbox {
+  // TODO: Move to theme
+  // background-color: $gray !important;
+}
+
+input[type="checkbox"].input-checkbox + i.input-checkbox::after {
+  position: absolute;
+  content: " ";
+  font-family:
+    "Material Icons",
+    sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+  // TODO: Move to theme
+  // color: $white;
+}
+
+input[type="checkbox"]:checked.input-checkbox + i.input-checkbox::after {
+  content: "check";
+}

@@ -1,0 +1,7 @@
+@mixin borderShadow($borderColor, $shadowColor: $borderColor) {
+  border: 1px solid $borderColor;
+  box-shadow:
+    0 3px 1px -2px transparentize($shadowColor, 0.8),
+    0 2px 2px 0 transparentize($shadowColor, 0.86),
+    0 1px 4px 0 transparentize($shadowColor, 0.88);
+}

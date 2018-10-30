@@ -1,0 +1,14 @@
+/**
+ * Base colors
+ */
+$white: #fafafa;
+$black: #0f0f0f;
+
+/**
+ * Specific colors
+ */
+$textColor: $white;
+$backgroundColor: #282c34;
+
+$scroll-color: lighten($backgroundColor, 5);
+$scroll-thumb-color: lighten($backgroundColor, 18);

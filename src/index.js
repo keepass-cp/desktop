@@ -1,4 +1,6 @@
 import './utils/Storage'
+import 'normalize.css'
+import '@assets/style/main.scss'
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 import App from './App'
